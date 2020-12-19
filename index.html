@@ -15,7 +15,14 @@
     <span style="--i:6;"><a href="https://www.tesla.com/roadster" target="_blank"><img src="roadster.jpg">></a></span>
     <span style="--i:7;"><a href="https://www.tesla.com/semi" target="_blank"><img src="semitruck.jpg">></a></span>
     <span style="--i:8;"><a href="https://www.tesla.com/solarroof" target="_blank"><img src="solar_roof.jpg">></a></span>
- 
   </div>
+  
+  <script type="text/javascript">
+    let box = document.querySelector('.box');
+    window.drag= function(e){
+      let x = e.clientX/3;
+      box.style.transform  = "perspective(1000px) rotateY(" + x + "deg)";      
+    }
+  </script>
 </body>
 </html>
