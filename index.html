@@ -19,8 +19,8 @@
   
   <script type="text/javascript">
     let box = document.querySelector('.box');
-    window.drag= function(e){
-      let x = e.clientX/3;
+    window.onmousemove= function(e){
+      let x = e.clientX/10;
       box.style.transform  = "perspective(1000px) rotateY(" + x + "deg)";      
     }
   </script>
