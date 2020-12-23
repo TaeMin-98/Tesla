@@ -9,7 +9,7 @@ body{
   justify-content:  center;
   align-items:  center;
   min-height: 100vh;
-  background: #000;
+  background: linear-gradient(#000 70%,#fff);
 }
 .box
 {
